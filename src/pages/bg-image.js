@@ -8,7 +8,7 @@ const GbiBridged = () => {
     const {backgroundCover}= useStaticQuery(
         graphql`
             query {
-                backgroundCover: file(relativePath: {eq: "cover.jpg"}) {
+                backgroundCover: file(relativePath: {eq: "cover-landscape.jpg"}) {
                     childImageSharp {
                     gatsbyImageData(width: 2000, webpOptions: {quality: 70}, quality: 50)
                     }

@@ -1238,16 +1238,18 @@ border: black 4px solid;
   }
 
   .nav-menu {
-    background-color: #000;
+    background-color: #fff;
   }
 
   .nav-link {
-    box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.23);
-    color: #fff;
+    //box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, 0.23);
+    box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.12), 0 -1px 0 0 transparent;
+
+    color: #000;
   }
 
   .nav-link.w--current {
-    box-shadow: none;
+    box-shadow: inset -1px 0 0 0 rgba(0, 0, 0, 0.12), 0 1px 0 0 #00b874;
   }
 
   .nav-link.page {

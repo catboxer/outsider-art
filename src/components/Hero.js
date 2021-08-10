@@ -10,7 +10,7 @@ const Hero = () => {
   const {backgroundCover}= useStaticQuery(
     graphql`
         query {
-            backgroundCover: file(relativePath: {eq: "waterfall.jpg"}) {
+            backgroundCover: file(relativePath: {eq: "cover-landscape.jpg"}) {
                 childImageSharp {
                 gatsbyImageData(width: 1200, webpOptions: {quality: 70}, quality: 50)
                 }
