@@ -16,7 +16,7 @@ const ContactPage = () => {
         <Navbar/>
         
         <div className="section wf-section">
-            <h3>Contact Us</h3>
+            <h1>Contact Us</h1>
             <p>
             The Art Outside is a community effort. No one person writes or creates awesome stuff. </p>
             <p>
