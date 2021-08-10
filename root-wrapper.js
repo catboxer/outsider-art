@@ -623,7 +623,6 @@ p:hover {
   padding-top: 60px;
   padding-right: 15px;
   padding-left: 15px;
-  background-image: url('./src/waterfall.jpg');
   background-position: 91% 50%;
   background-size: cover;
   box-shadow: inset -3px 0 0 0 rgba(0, 0, 0, 0.28);
@@ -895,9 +894,6 @@ p:hover {
 .subscribe-section {
   padding-top: 52px;
   padding-bottom: 52px;
-  background-color: #b8c6cc;
-  background-image: url('../images/waterfall.jpg');
-  background-position: 0px 50%;
   box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.12);
   color: #fff;
   text-align: center;
