@@ -2,8 +2,8 @@ import { graphql } from "gatsby"
 import React from "react"
 import ArtistList from "../components/ArtistList"
 
-const StyleTemplate = props => {
-    console.log(props)
+const StyleTemplate = ({data}) => {
+ 
     return (
         <div>
             <h2>Style Template Page</h2>

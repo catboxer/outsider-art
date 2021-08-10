@@ -4,23 +4,24 @@ const Footer = () => {
   return (
     <Wrapper>
       <p>
-        &copy; {new Date().getFullYear()} The ART OUT. All rights reserved. Designed and Maintained by Volunteers.
+      The ART OUT &copy; {new Date().getFullYear()} Don't Steal From Old People.
       </p>
     </Wrapper>
   )
 }
 const Wrapper = styled.footer`
-  height: 5rem;
+  height: 3rem;
   display: grid;
   place-items: center;
   background: var(--clr-black);
   text-align: center;
-  padding: 1rem;
+  padding: .25rem;
   p {
     color: var(--clr-white);
     margin-bottom: 0;
+    font-size: .75rem;
     @media (max-width: 576px) {
-      font-size: 0.75rem;
+      font-size: 0.5rem;
     }
   }
 `

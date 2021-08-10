@@ -1,7 +1,8 @@
 import React from 'react'
 import TagsList from './TagsList'
 import ArtistList from './ArtistList'
-import {graphql, useStaticQuery} from 'gatsby'
+import Slider from './Slider'
+import { graphql, useStaticQuery} from 'gatsby'
 
 const query = graphql`
   {
@@ -20,7 +21,6 @@ const query = graphql`
           gallery_name
           location
           references
-          state
           style
           gallery {
             localFiles {
@@ -48,7 +48,7 @@ const {allAirtable: {nodes:artists}} = useStaticQuery(query)
     <div>
         <h1>this is all artists</h1>
         <TagsList artists = {artists}/>
-        <ArtistList artists = {artists} />
+        <Slider/>
     </div>
     )
 }

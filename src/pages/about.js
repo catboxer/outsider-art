@@ -1,5 +1,5 @@
 import React from "react"
-import { Layout, Hero, SEO, Navbar, About} from "../components"
+import { Layout, Hero, SEO, Footer, Navbar, About} from "../components"
 import styled from "styled-components"
 import { Link } from "gatsby"
 const AboutPage = () => {
@@ -13,6 +13,7 @@ const AboutPage = () => {
            <About/>
       </div>
     </div>
+    <Footer/>
     </Layout>
     )
 }

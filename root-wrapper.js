@@ -170,7 +170,7 @@ img {
     display: block;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 810px) {
   .w-nav[data-collapse="small"] .w-nav-menu {
     display: none;
   }
@@ -189,6 +189,8 @@ img {
     display: block;
   }
 }
+
+
 .w-container {
   margin-left: auto;
   margin-right: auto;
@@ -336,9 +338,6 @@ img {
   .w-hidden-medium {
     display: inherit !important;
   }
-  .w-hidden-small {
-    display: none !important;
-  }
   .w-row,
   .w-container .w-row {
     margin-left: 0;
@@ -395,12 +394,6 @@ img {
   }
   .w-hidden-medium {
     display: inherit !important;
-  }
-  .w-hidden-small {
-    display: inherit !important;
-  }
-  .w-hidden-tiny {
-    display: none !important;
   }
   .w-col {
     width: 100%;
@@ -546,6 +539,9 @@ p:hover {
   top: 0px;
   right: 0px;
   bottom: 0px;
+}
+.portrait{
+  width: 150px;
 }
 
 .logo {
@@ -754,6 +750,7 @@ p:hover {
   border: 1px solid rgba(0, 0, 0, 0.18);
   border-radius: 30px;
   text-transform: none;
+  text-decoration: none;
 }
 
 .pagination-nav {
@@ -817,6 +814,7 @@ p:hover {
 .section {
   padding: 40px;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.12);
+  max-width: 45vw;
 }
 
 .team-column {
@@ -863,8 +861,9 @@ p:hover {
 
 .hollow-button {
   position: absolute;
-  left: 20px;
-  bottom: 20px;
+  z-index: 11;
+  left: 30px;
+  top: 50px;
   padding: 7px 15px;
   border: 3px solid #fff;
   -webkit-transition: border-color 250ms ease;
@@ -877,7 +876,7 @@ p:hover {
 }
 
 .hollow-button:hover {
-  border-color: #0050b8;
+  border-color: #00b874;
 }
 
 .author-image {
@@ -1273,7 +1272,8 @@ border: black 4px solid;
   }
 
   .section {
-    padding: 27px 10px;
+    padding: 27px 10px 1rem 1.5rem;
+    max-width: 710px;
   }
 
   .social-link {
