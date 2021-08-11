@@ -112,7 +112,7 @@ const onClose = () => {
                 )
               })}
             </div>
-            <h2>Gallery</h2>    
+            <h2>Clickable Gallery</h2>    
             {/* container for image gallery */}
                         <Gallery
                         images={images}  
