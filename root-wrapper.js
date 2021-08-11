@@ -731,7 +731,7 @@ p:hover {
 }
 
 .article-info-wrapper {
-  margin-top: .75rem;
+  margin: .75rem 0;
 }
 
 .article-info-text {
