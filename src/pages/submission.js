@@ -1,12 +1,12 @@
 import React from 'react'
-import { Layout, Footer, SEO, Hero, Navbar } from '../components'
+import { Layout, Footer, Seo, Hero, Navbar } from '../components'
 
 const SubmissionPage = () => {
 
   
   return (
     <Layout>
-    <SEO title="The Art Outside | Contact Us Page"/>
+    <Seo title="The Art Outside | Contact Us Page"/>
     <div className="all-content w-clearfix wf-section">
     <Hero/>
     <div className="main-column content">
@@ -38,7 +38,8 @@ const SubmissionPage = () => {
     className="airtable-embed" 
     src="https://airtable.com/embed/shrC2EXZrwRfEL7JO?backgroundColor=black"
     frameBorder="0" 
-    width="100%" height="533" >
+    width="100%" height="533"
+    title="Submission Form To Add Outsider Artists" >
     </iframe>
     </div>
     </div>

@@ -2,8 +2,22 @@ import React from 'react'
 import setupTags from '../context/setupTags'
 import {Link} from 'gatsby'
 import slugify from 'slugify'
-const TagsList =({artists=[]}) => {
-const newTags = setupTags(artists)
+import { graphql, useStaticQuery} from 'gatsby'
+const query = graphql`
+  {
+    allAirtable {
+      nodes {
+        id
+        data {
+          style
+        }
+      }
+    }
+  }
+`
+const TagsList =() => {
+  const {allAirtable: {nodes:genres}} = useStaticQuery(query)
+const newTags = setupTags(genres)
     return <div>
       <h4>Genres</h4>
       <div>

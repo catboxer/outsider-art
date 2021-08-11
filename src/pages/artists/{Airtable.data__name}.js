@@ -1,9 +1,11 @@
 import React from "react"
-import { Layout, SEO } from "../../components"
+import { Layout, Seo } from "../../components"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Gallery from '@browniebroke/gatsby-image-gallery'
-import slugify from 'slugify'
+//import slugify from 'slugify'
+
+
 const ArtistTemplate = ({data}) => {
   const {
     name,
@@ -28,13 +30,19 @@ const images = gallery.localFiles.map((image) => image.childImageSharp)
   zoomOutLabel: 'Zoom Out',
   closeLabel: 'Close',
 }
-const onClose = () => {
-  console.log('Lightbox was closed')
-}
+// const onClose = () => {
+//   console.log('Lightbox was closed')
+// }
+const CustomWrapper = ({ children, onClick }) => (
+  <div className="my-custom-image-wrapper" role="link" tabindex="0" onClick={onClick} onKeyDown={onClick}>
+    {children}
+  </div>
+)
+
  if(references){
   const bibliography = references.split("|")
   return <Layout>
-    <SEO title={` ${name} | The Art Outside`} description={`Biography, site photos and more about artist ${name}`}/> 
+    <Seo title={` ${name} | The Art Outside`} description={`Biography, site photos and more about artist ${name}`}/> 
     <Link to="../../" className="hollow-button">❮   all ARTISTS</Link>
     <div className="header-image wf-section">
     <GatsbyImage className="header-image" image={getImage(cover_img.localFiles[0])} alt={`photo of art made by ${name}`}/>
@@ -48,7 +56,7 @@ const onClose = () => {
             <div className="article-body-column w-col w-col-12">
             <div className="article-info-wrapper">
                 {style.map((tag, index) => {
-                   const slug = slugify(tag,{lower:true} )
+                  //  const slug = slugify(tag,{lower:true} )
                   return(
                     // <Link to={`/${slug}`} key={index} className="article-info-text tag">{tag}</Link>
                     <div key={index} className="article-info-text tag">{tag}</div>
@@ -57,20 +65,22 @@ const onClose = () => {
               </div>
               <h1 className="article-heading">{name}</h1>
               <p className="quote">Location: {location}</p>
-              <h2>{gallery_name}</h2>
+           
               <p className="subtitle">{dob}</p>
               <h1>Observations</h1> 
               <p>Interviewed by {interviewer}</p>
               <p dangerouslySetInnerHTML={{__html: biography.childMarkdownRemark.html}}></p>
-              <h1>Clickable Gallery</h1>    
-              {/* container for image gallery */}
+              <h2>{gallery_name}</h2>  
+              <div className="artist-gallery">
+              {/* open container for image gallery */}
                           <Gallery
                           images={images}  
                           lightboxOptions={lightboxOptions}
-                          onClose={onClose}
+                          //onClose={onClose}
+                          customWrapper={CustomWrapper}
                           />
-                 
-                    
+              {/* close container for image gallery */}
+              </div>
               <h2>References</h2>
               <ol>{bibliography.map((book, index) => {
                 return(
@@ -86,7 +96,7 @@ const onClose = () => {
     </Layout>       
 } else {
   return <Layout>
-  <SEO title={` ${name} | The Art Outside`} description={`Biography, site photos and more about artist ${name}`}/> 
+  <Seo title={` ${name} | The Art Outside`} description={`Biography, site photos and more about artist ${name}`}/> 
   <Link to="../../" className="hollow-button">❮   all ARTISTS</Link>
   <div className="header-image wf-section">
   <GatsbyImage className="header-image" image={getImage(cover_img.localFiles[0])} alt={`photo of art made by ${name}`}/>
@@ -100,7 +110,7 @@ const onClose = () => {
           <div className="article-body-column w-col w-col-12">
           <div className="article-info-wrapper">
               {style.map((tag, index) => {
-                 const slug = slugify(tag,{lower:true} )
+                //  const slug = slugify(tag,{lower:true} )
                 return(
                   // <Link to={`/${slug}`} key={index} className="article-info-text tag">{tag}</Link>
                   <div key={index} className="article-info-text tag">{tag}</div>
@@ -109,23 +119,27 @@ const onClose = () => {
             </div>
             <h1 className="article-heading">{name}</h1>
             <p className="quote">Location: {location}</p>
-            <h2>{gallery_name}</h2>
+         
             <p className="subtitle">{dob}</p>
             <h1>Observations</h1> 
             <p>Interviewed by {interviewer}</p>
             <p dangerouslySetInnerHTML={{__html: biography.childMarkdownRemark.html}}></p>
-            <h1>Clickable Gallery</h1>    
-            {/* container for image gallery */}
+            <h2>{gallery_name}</h2>  
+            <div className="artist-gallery">
+            {/* open container for image gallery */}
                         <Gallery
                         images={images}  
                         lightboxOptions={lightboxOptions}
-                        onClose={onClose}
+                        //onClose={onClose}
+                        customWrapper={CustomWrapper}
                         />
+            {/* close container for image gallery */}
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </Layout> 
+  </Layout>       
 }}
 
 export const query = graphql`

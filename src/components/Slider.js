@@ -1,7 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { FiChevronRight } from 'react-icons/fi'
 import { Link, graphql, useStaticQuery} from 'gatsby'
 import slugify from 'slugify'
 const query = graphql`

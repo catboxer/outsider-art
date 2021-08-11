@@ -1,7 +1,6 @@
 import React from 'react'
-import { graphql } from 'gatsby'
 import styled from 'styled-components'
-import { Layout, SEO, Hero, Navbar, Footer } from '../components'
+import { Layout, Seo, Hero, Navbar, Footer } from '../components'
 
 const ContactPage = () => {
 
@@ -9,7 +8,7 @@ const ContactPage = () => {
   return (
   
       <Layout>
-        <SEO title="The Art Outside | Contact Us Page"/>
+        <Seo title="The Art Outside | Contact Us Page"/>
         <div className="all-content w-clearfix wf-section">
         <Hero/>
         <div className="main-column content">

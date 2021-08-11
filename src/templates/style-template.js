@@ -1,6 +1,5 @@
 import { graphql } from "gatsby"
 import React from "react"
-import ArtistList from "../components/ArtistList"
 
 const StyleTemplate = ({data}) => {
  

@@ -1,9 +1,6 @@
-import React, { useContext } from 'react'
-import styled from 'styled-components'
-import logo from '../images/logo.svg'
-import { GoThreeBars } from 'react-icons/go'
+import React from 'react'
 import { Link } from 'gatsby'
-import { GatsbyContext } from '../context/context'
+// import { GatsbyContext } from '../context/context'
 const Navbar = () => {
   return(
   <nav className="navbar w-nav">
