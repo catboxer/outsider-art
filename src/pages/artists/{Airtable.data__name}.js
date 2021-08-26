@@ -70,7 +70,7 @@ const CustomWrapper = ({ children, onClick }) => (
               <h1>Observations</h1> 
               <p>Interviewed by {interviewer}</p>
               <p dangerouslySetInnerHTML={{__html: biography.childMarkdownRemark.html}}></p>
-              <h2>{gallery_name}</h2>  
+              <h2>{gallery_name?gallery_name:"Gallery"}</h2>  
               <div className="artist-gallery">
               {/* open container for image gallery */}
                           <Gallery

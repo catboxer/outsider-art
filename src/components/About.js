@@ -4,20 +4,31 @@ const About = () => {
   return (<>
   <div className="section wf-section">
         <h1>About The Art Outside</h1>
-        <p>I met Roland once before he passed away in 2020 but have since then spent hours with his lovely wife Jo Ann Weaver.</p>
-        <p>She graciously showed me around her home and shared her albums of collected Outsider Art. 
-          Their enthusiasm and dedication to finding and documenting these artists is infectious and I hope that you will too go out and seek, document and share what you find in the world around you.
+        <p>I met Roland once before he passed away in 2020 but have since then spent a few hours with his wife Jo Ann Weaver.</p>
+        <p>She graciously showed me around her home and shared her albums of collected interviews and photos of outsider artists. 
+          Their enthusiasm and dedication to finding and documenting these artists is infectious and I hope that it inspires you to stop and check out the oddities you find along your path. 
           </p><p>
-          I built this website because I could not let their work go unshared. I made it for Jo Ann because she recently lost her partner and when she talks about him you know she has lost her other half.
-          I made it because I wanted to give Airtable and Gatsby a spin and this seemed an ideal project for it.
+          I made it because I wanted to give Airtable and Gatsby a spin and this project felt like something new and interesting to put out into the world.
           </p><p>
-          Their attention to detail was exceptional. Each album came with maps, notes, biographies, photos and a bibliography of the books and content they had used to scout out each of these artists. 
-          I have only opened the one for North Carolina and entered the first 4 of 18 artists. We have just begun the process of transcribing their in-depth notes. 
-          There are 7 more albums! 
-          </p><p>I cannot do justice to the photo albums in full but I hope this website somehow captures a bit of the love they shared together. I also hope it inspires you to stop and check out the oddities you find along your path. 
-          </p><p>
-          Rosalee
+          Their attention to detail was exceptional. Each album came with maps, notes, biographies, photos and a bibliography of the books and content they had used to scout out each of these artists. I do not think I can do it justice.
+          I have only opened the one for North Carolina and am overwhelmed with the content. There are quite a few more albums! 
+          </p>
+          <p>
+          Rosalee Rester
            </p>
+           <h1>About The North Carolina Photo Album</h1>
+           <h2>Our Tour of 'Environments' by Self-Taught Artists North Carolina, Autumn, 2008</h2>
+           <p>Over six days (October 27 - November 1) we drove about 1,400 miles in search of art-filled 
+             yards created by 'Outsider artists in North Carolina. To prepare, Jo Ann read 8 books on the subject, 
+             and I discovered a <a href="http://www.detourart.com">huge website </a>. 
+           We identified about 25 sites in NC that we hoped to see, then pinpointed them on a state map, noting how 
+           sites clustered together geographically. We selected those in the largest clusters, to make efficient 
+           use of time and fuel, thus choosing 14 sites to visit. We also planned to visit a few museums and 
+           galleries specializing in outsider art. Our richest experiences occurred where we were able to visit 
+           with the artists (at 3 sites) or, where the artist was deceased, with family members (4 sites). 
+           A folded map of NC inside the front album cover indicates the locations of sites we visited 
+          </p>
+<p>Roland Atkinson & Jo Ann Weaver</p>
       </div>
       <div className="section wf-section">
       <h2>The Volunteers</h2>
