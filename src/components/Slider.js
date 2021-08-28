@@ -10,10 +10,7 @@ const query = graphql`
         cover_img {
           localFiles {
             childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-                layout: CONSTRAINED
-              )
+              gatsbyImageData(placeholder: TRACED_SVG, layout: CONSTRAINED, height: 104)
             }
           }
         }
